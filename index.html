@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Music App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="components.css">
+</head>
+
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">🎵 Music</div>
+
+      <nav>
+        <button class="nav-btn active">Home</button>
+        <button class="nav-btn">Explore</button>
+        <button class="nav-btn">Library</button>
+        <button class="nav-btn">Upgrade</button>
+      </nav>
+      <div class="playlist">
+        <h4 class="playlist-title">My Playlist</h4>
+        <div class="playlist-list" id="playlist"></div>
+      </div>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="content">
+        <header class="topbar">
+          <input type="text" placeholder="Search songs, albums, artists">
+          <button class="icon-btn">⏺</button>
+          <button class="icon-btn">🙂</button>
+        </header>
+        <section class="music-section fade-in">
+          <h2 class="section-title">Music for you</h2>
+
+          <div class="card-scroll">
+            <div class="card-row">
+
+              <section class="music-section">
+                <h2 class="section-title">Music for you</h2>
+                <div class="card-scroll">
+                  <div class="card-row" id="musicCards"></div>
+                </div>
+              </section>
+<!-- 
+
+
+              <div class="music-card">
+                <div class="poster">
+                  <img src="https://picsum.photos/300/300?random=12" alt="song">
+                  <button class="play-btn">▶</button>
+                </div>
+                <h3 class="song-name">Raabta</h3>
+                <p class="artist-name">Shreya Ghosal</p>
+              </div>
+              <div class="music-card">
+                <div class="poster">
+                  <img src="https://picsum.photos/300/300?random=11" alt="song">
+                  <button class="play-btn">▶</button>
+                </div>
+                <h3 class="song-name">Sunflower</h3>
+                <p class="artist-name">Post Malone</p>
+
+                <div class="music-card">
+                  <div class="poster">
+                    <img src="https://picsum.photos/300/300?random=12" alt="song">
+                    <button class="play-btn">▶</button>
+                  </div>
+                  <h3 class="song-name">Neon Skies</h3>
+                  <p class="artist-name">Luna Wave</p>
+                </div>
+
+                <div class="music-card">
+                  <div class="poster">
+                    <img src="https://picsum.photos/300/300?random=13" alt="song">
+                    <button class="play-btn">▶</button>
+                  </div>
+                  <h3 class="song-name">Slow Motion</h3>
+                  <p class="artist-name">Karan Malik</p>
+                </div> -->
+              </div>
+            </div>
+        </section>
+
+        <section class="placeholder">
+          <button class="primary-btn">Play all</button>
+        </section>
+      </div>
+    </main>
+    <footer class="player">
+      <div class="player-left">
+        <img src="https://picsum.photos/80?random=20" alt="cover">
+
+        <div class="song-info">
+          <div class="player-song-title" id="playerTitle">Not Playing</div>
+          <div class="player-song-artist" id="playerArtist">Select a song</div>
+        </div>
+      </div>
+
+      <div class="player-center">
+        <div class="controls">
+
+          <button class="control-btn" id="prevBtn">⏮</button>
+          <button class="control-btn play" id="playPauseBtn">▶</button>
+          <button class="control-btn" id="nextBtn">⏭</button>
+          <button class="control-btn" id="shuffleBtn">🔀</button>
+          <button class="control-btn" id="repeatBtn">🔁</button>
+
+
+        </div>
+
+        <div class="progress">
+          <span id="currentTime">0:00</span>
+
+          <input type="range" id="progressBar" min="0" max="100" value="0" />
+
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+
+
+      <div class="player-right">
+        <span id="volumeIcon">🔊</span>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.8" />
+      </div>
+
+    </footer>
+
+
+  </div>
+
+  <audio id="audio"></audio>
+
+  <script src="script.js"></script>
+  <script src="server.js"></script>
+</body>
+
+</html>
