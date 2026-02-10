@@ -551,3 +551,33 @@ nav {
   width: 60%;
   opacity: 0.6;
 }
+  
+/* Page transition   , needs to be change */
+.page {
+  display: none;
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.page.active {
+  display: block;
+  animation: pageIn 220ms ease-out forwards;
+}
+
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.nav-btn.active {
+  background: rgba(29, 185, 84, 0.25);
+  border-left: 3px solid #1db954;
+}
+

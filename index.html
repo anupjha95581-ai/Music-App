@@ -18,11 +18,11 @@
       <div class="logo">🎵 Music</div>
 
       <nav>
-        <button class="nav-btn active">Home</button>
-        <button class="nav-btn">Explore</button>
-        <button class="nav-btn">Library</button>
-        <button class="nav-btn">Upgrade</button>
-        <button class="nav-btn">PLAYLIST</button>
+       <button class="nav-btn active" data-page="homePage">Home</button>
+<button class="nav-btn" data-page="ExplorePage">Explore</button>
+<button class="nav-btn" data-page="libraryPage">Library</button>
+<button class="nav-btn" data-page="playlistPage">Playlist</button>
+
       </nav>
       <div class="playlist">
         <h4 class="playlist-title">My Playlist</h4>
@@ -34,13 +34,16 @@
     <!-- Main -->
     <main class="main">
       <div class="content">
+
+      <!-- HOME PAGE -->
+    <section id="homePage" class="page active">
         <header class="topbar">
           <input type="text" placeholder="Search songs, albums, artists">
           <button class="icon-btn">SIGN UP</button>
           <button class="icon-btn">LOG IN</button>
         </header>
         <section class="music-section fade-in">
-          <h2 class="section-title">Music for you</h2>
+          <!-- <h2 class="section-title">Music for you</h2> -->
 
           <div class="card-scroll">
             <div class="card-row">
@@ -94,6 +97,14 @@
         <section class="placeholder">
           <button class="primary-btn">Play all</button>
         </section>
+    </section>
+
+    
+    <!-- FUTURE PAGES (empty for now) -->
+    <section id="ExplorePage" class="page"></section>
+    <section id="libraryPage" class="page"></section>
+
+
       </div>
     </main>
     <footer class="player">

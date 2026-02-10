@@ -386,3 +386,25 @@ document.addEventListener("keydown", (e) => {
       break;
   }
 });
+
+const navButtons = document.querySelectorAll(".nav-btn");
+const pages = document.querySelectorAll(".page");
+
+navButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const targetPage = btn.dataset.page;
+
+    // sidebar active state
+    navButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    // switch pages
+    pages.forEach(page => {
+      if (page.id === targetPage) {
+        page.classList.add("active");
+      } else {
+        page.classList.remove("active");
+      }
+    });
+  });
+});
