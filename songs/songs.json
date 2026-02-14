@@ -1,0 +1,38 @@
+[
+  {
+    "id": "song-1",
+    "file": "Gigi Perez - Sailor Song.mp3",
+    "title": "Sailor Song",
+    "artist": "Gigi Perez",
+    "language": "english",
+    "era": "2020s",
+    "year": 2024,
+    "mood": "romantic",
+    "tags": ["trending", "indie", "love"],
+    "trendingScore": 95
+  },
+  {
+    "id": "song-2",
+    "file": "Running Up That Hill - Kate Bush.mp3",
+    "title": "Running Up That Hill",
+    "artist": "Kate Bush",
+    "language": "english",
+    "era": "80s",
+    "year": 1985,
+    "mood": "workout",
+    "tags": ["80s", "classic", "party"],
+    "trendingScore": 88
+  },
+  {
+    "id": "song-3",
+    "file": "The Ronettes - Be My Baby.mp3",
+    "title": "Be My Baby",
+    "artist": "The Ronettes",
+    "language": "english",
+    "era": "60s",
+    "year": 1963,
+    "mood": "romantic",
+    "tags": ["classic", "love", "retro"],
+    "trendingScore": 72
+  }
+]

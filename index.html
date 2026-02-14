@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="animation.css">
   <link rel="stylesheet" href="components.css">
 </head>
 
@@ -15,7 +15,7 @@
   <div class="app">
     <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="logo">🎵 Music</div>
+      <div class="logo">&#127925; Music</div>
 
       <nav>
        <button class="nav-btn active" data-page="homePage">Home</button>
@@ -42,6 +42,20 @@
           <button class="icon-btn">SIGN UP</button>
           <button class="icon-btn">LOG IN</button>
         </header>
+        <section class="explore-categories" aria-label="Explore categories">
+          <button class="category-chip active">Trending Now</button>
+          <button class="category-chip">Bollywood Hindi</button>
+          <button class="category-chip">90s Hits</button>
+          <button class="category-chip">80s Classics</button>
+          <button class="category-chip">Punjabi Beats</button>
+          <button class="category-chip">Lo-Fi</button>
+          <button class="category-chip">Romantic</button>
+          <button class="category-chip">Workout</button>
+          <button class="category-chip">Party Mix</button>
+        </section>
+
+        
+
         <section class="music-section fade-in">
           <!-- <h2 class="section-title">Music for you</h2> -->
 
@@ -103,6 +117,7 @@
     <!-- FUTURE PAGES (empty for now) -->
     <section id="ExplorePage" class="page"></section>
     <section id="libraryPage" class="page"></section>
+    <section id="playlistPage" class="page"></section>
 
 
       </div>
@@ -120,11 +135,11 @@
       <div class="player-center">
         <div class="controls">
 
-          <button class="control-btn" id="prevBtn">⏮</button>
-          <button class="control-btn play" id="playPauseBtn">▶</button>
-          <button class="control-btn" id="nextBtn">⏭</button>
-          <button class="control-btn" id="shuffleBtn">🔀</button>
-          <button class="control-btn" id="repeatBtn">🔁</button>
+          <button class="control-btn" id="prevBtn">&#9198;</button>
+          <button class="control-btn play" id="playPauseBtn">&#9654;</button>
+          <button class="control-btn" id="nextBtn">&#9197;</button>
+          <button class="control-btn" id="shuffleBtn">&#128256;</button>
+          <button class="control-btn" id="repeatBtn">&#128257;</button>
 
 
         </div>
@@ -140,7 +155,7 @@
 
 
       <div class="player-right">
-        <span id="volumeIcon">🔊</span>
+        <span id="volumeIcon">&#128266;</span>
         <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.8" />
       </div>
 
@@ -152,7 +167,7 @@
   <audio id="audio"></audio>
 
   <script src="script.js"></script>
-  <script src="server.js"></script>
 </body>
 
 </html>
+

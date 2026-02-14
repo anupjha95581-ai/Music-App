@@ -581,3 +581,41 @@ nav {
   border-left: 3px solid #1db954;
 }
 
+.explore-categories {
+  display: flex;
+  gap: 10px;
+  margin-top: -18px;
+  margin-bottom: 26px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.explore-categories::-webkit-scrollbar {
+  height: 6px;
+}
+
+.explore-categories::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.18);
+  border-radius: 999px;
+}
+
+.category-chip {
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-radius: 999px;
+  padding: 10px 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform var(--fast), background var(--mid), border-color var(--mid);
+}
+
+.category-chip:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.14);
+}
+
+.category-chip.active {
+  background: rgba(29,185,84,0.24);
+  border-color: rgba(29,185,84,0.8);
+}
