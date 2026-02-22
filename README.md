@@ -1,4 +1,4 @@
-# music_(just frondend)
+# music_(Just Frontend)
 
 # Music App
 
